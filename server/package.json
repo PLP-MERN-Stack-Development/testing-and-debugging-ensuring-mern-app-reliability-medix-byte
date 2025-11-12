@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:unit": "jest --config jest.unit.config.js --runInBand",
+    "test:integration": "jest --config jest.integration.config.js --runInBand",
+    "setup-test-db": "node tests/setupTestDB.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.8.7",
+    "morgan": "^1.10.1",
+    "winston": "^3.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "mongodb-memory-server": "^8.11.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^6.3.0"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
